@@ -18,4 +18,10 @@ app.get('/', function(req,  res) {
   res.render('contact');
 });
 
+app.post('/contact', urlencodedParser, function (req, res) {
+  res.render('contact-success', {
+    data: req.body
+  });;
+});
+
 app.listen(3000);
