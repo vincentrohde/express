@@ -1,15 +1,25 @@
+/* Different views */
+
 .contact {
   background-color:darkseagreen;
 }
+
+.success {
+  background-color:lightskyblue;
+}
+
+/* General */
 
 body {
   font-family: 'Futura';
   text-align: center;
 }
+
 h1 {
   font-size: 5rem;
   letter-spacing: .1rem;
 }
+
 p {
   font-size: 2rem;
 }
