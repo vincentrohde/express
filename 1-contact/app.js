@@ -15,7 +15,9 @@ app.use('/assets', express.static('assets'));
 
 app.get('/', function(req,  res) {
   // use of ejs
-  res.render('contact');
+  res.render('contact', {
+    qS: req.query
+  });
 });
 
 app.post('/', urlencodedParser, function (req, res) {
